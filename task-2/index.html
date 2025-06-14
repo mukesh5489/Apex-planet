@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Task 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </nav>
+  <main class="grid-container">
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label>Name:
+          <input type="text" name="name" required>
+        </label><br>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label><br>
+        <label>Message:
+          <textarea name="message" required></textarea>
+        </label><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <aside>
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button id="addTaskBtn">Add</button>
+      <ul id="todoList"></ul>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
