@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🛒 Product Listing</h1>
+    </div>
+    <div class="container">
+        <div class="filters">
+            <label>
+                Category:
+                <select id="categoryFilter">
+                    <option value="all">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                </select>
+            </label>
+            <label>
+                Price:
+                <select id="priceFilter">
+                    <option value="all">All</option>
+                    <option value="0-50">Under ₹50</option>
+                    <option value="50-100">₹50 - ₹100</option>
+                    <option value="100-1000">Over ₹100</option>
+                </select>
+            </label>
+            <label>
+                Sort by:
+                <select id="sortFilter">
+                    <option value="default">Default</option>
+                    <option value="rating">Rating (High to Low)</option>
+                    <option value="priceLowHigh">Price (Low to High)</option>
+                    <option value="priceHighLow">Price (High to Low)</option>
+                </select>
+            </label>
+        </div>
+        <div id="productList" class="product-list"></div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Product Store. All rights reserved.
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
